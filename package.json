@@ -2,13 +2,17 @@
   "name": "tg-node-bot",
   "version": "1.0.0",
   "description": "",
-  "main": "bot.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node index.js && echo 'Build complete.'",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@vercel/node": "^3.2.17",
+    "koa": "^2.15.3",
     "node-telegram-bot-api": "^0.66.0"
   }
 }
